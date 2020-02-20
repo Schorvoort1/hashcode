@@ -1,7 +1,6 @@
-import re
-f = open('a_example.txt','rt')
-y = re.findall(r'\d', f)
-print(x)
+f = open('a_example.txt','r')
+x = f.readlines()
+y = []
+for i in range(len(x)):
+    y.append(x[i].split())
 print(y)
-f.close
-
